@@ -1,0 +1,6 @@
+Flask
+flask-cors
+gunicorn
+azure-data-tables
+python-dotenv
+google-auth

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Night Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="login-area">
+            <span id="user-greeting"></span>
+            <div id="google-signin-button"></div>
+            <button id="logout-button" type="button" hidden>
+                Log out
+            </button>
+        </div>
+
+        <h1>Movie Night Picker</h1>
+        <p>Can't decide what to watch? Let us pick for you!</p>
+
+        <div class="card">
+            <h2>Random Movie</h2>
+
+            <p id="random-movie" class="result">
+                Your movie will appear here.
+            </p>
+
+            <button id="random-button">
+                Get Random Movie
+            </button>
+        </div>
+
+        <div class="card">
+            <h2>Pick a Genre</h2>
+
+            <form id="genre-form">
+
+                <label for="genre">Choose a genre:</label>
+
+                <select id="genre" name="genre">
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="horror">Horror</option>
+                    <option value="sci-fi">Sci-Fi</option>
+                </select>
+
+                <button type="submit">
+                    Recommend a Movie
+                </button>
+
+            </form>
+
+            <p id="recommendation" class="result">
+                Your recommendation will appear here.
+            </p>
+
+        </div>
+
+    </div>
+    
+    <script src="https://accounts.google.com/gsi/client"></script>
+    <script>
+        const GOOGLE_CLIENT_ID = "541286651576-qknqlvouhr9mnabrph7q72b6h55migvj.apps.googleusercontent.com";
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
